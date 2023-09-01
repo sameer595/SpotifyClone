@@ -248,14 +248,15 @@
 }
 
 .bot>img {
-    width: 100%;
+    width: 98.50vw;
     height: 75px;
 }
 
-body {
-    /* background: linear-gradient(180deg, #222222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0) 100%);
-    z-index: 0.5; */
-
-    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
-
+.media-logo,.media-time{
+    position: absolute;
+    margin-top: 10px;
+}
+.media-time{
+    position: absolute;
+    margin-top: 45px;
 }
