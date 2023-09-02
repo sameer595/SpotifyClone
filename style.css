@@ -46,6 +46,13 @@
 }
 .user>img{
     border-radius: 50%;
+    transition: all .3s ease-in-out;
+
+}
+.user>img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    border-radius: 50%;
 }
 
 .navi {
@@ -79,9 +86,16 @@
     width: 288px;
     height: 69px;
     border-radius: 8px;
-
+    transition: all .3s ease-in-out;
 }
-
+.gdm:hover {
+    background-color:rgb(66, 63, 63); ;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: #303030;
+    color: white;
+    font-weight: 800;
+}
 .love {
     width: 70px;
     height: 69px;
@@ -160,6 +174,16 @@
     background-color: #303030;
     border-radius: 10px;
     margin: 10px 0px;
+    transition: all .3s ease-in-out;
+}
+.mycard1:hover {
+    background-color: #303030;
+    border-radius: 10px;
+    background-color:rgb(66, 63, 63); ;
+    cursor: pointer;
+    box-shadow: #998484;
+    color: white;
+    font-weight: 800;
 }
 
 .mycard1>img {
@@ -173,7 +197,7 @@
 }
 
 .week {
-    color: #FFF;
+    color: #f7f1f1;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -183,6 +207,11 @@
     margin: auto;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     font-size: 20px;
+    transition: all .2s ease-in-out;
+}
+.week:hover {
+    color: #FFF;
+    /* font-weight: 800; */
 }
 
 .mycard1>p {
@@ -191,22 +220,41 @@
     font-weight: 500;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     font-size: 15px;
+    transition: all .2s ease-in-out;
+}
+.mycard1>p:hover {
+    color: #f0e7e7;
 }
 
 /* left section  */
 .logo1 {
-    width: 202.576px;
-    height: 60.526px;
+    width: 200.576px;
+    height: 50.526px;
     /* background: #303030; */
+}
+.logo1>img {
+    width: 150.576px;
+    height: 50.526px;
+    margin-left: 10px;
+    transition: all .3s ease-in-out;
+}
+.logo1>img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: whitesmoke;
 }
 
 .para {
-    color: #FFF;
+    color: #f5eded;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     font-size: 15px;
+}
+.para:hover,.item2>p:hover {
+    color: #ffffff;
+    cursor: pointer;
+
 }
 
 .sec-2>svg {
@@ -214,7 +262,7 @@
 }
 
 .item2>p {
-    color: #FFF;
+    color: #f5eded;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
     font-size: 15px;
     font-style: normal;
@@ -256,7 +304,41 @@
     position: absolute;
     margin-top: 10px;
 }
+.media-logo>svg:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    color: whitesmoke; 
+}
+.media-time:hover{
+    cursor: pointer;
+
+}
 .media-time{
     position: absolute;
     margin-top: 45px;
 }
+
+
+
+
+@media screen and (min-width: 480px) {
+
+ .navbar-spoti{
+display: none;
+ }
+    
+      }
+
+@media screen and (max-width: 480px) {
+
+.left-section{
+ 
+}
+.left{
+  
+}
+.right{
+  
+}
+
+  }
