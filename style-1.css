@@ -1,4 +1,4 @@
-* {
+* {lin
     padding: 0%;
     margin: 0%;
 }
@@ -35,7 +35,8 @@
 .right {
     width: 100%;
     height: auto;
-    background: linear-gradient(180deg, #222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0.00) 100%);
+    background-color:#070707;
+    /* background: linear-gradient(180deg, #222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0.00) 100%); */
 
 }
 
@@ -95,44 +96,198 @@
 
 
 }
+
 .good-morning {
-    background-image: linear-gradient(180deg, #90AEA7 0%, #000 89.7%) !important;
+    background-image: linear-gradient(180deg, #687c77 0%, #000 89.7%) !important;
     height: auto;
 }
-.sentences{
+
+.sentences {
     margin-top: 80px;
 }
-.pic{
+
+.pic {
     margin-top: 60px;
 }
-.para-1{
+
+.para-1 {
     color: #FFF;
-font-family: Circular Std;
-font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
 }
-.para-2{
+
+.para-2 {
     color: #FFF;
-font-family: Circular Std;
-font-size: 80px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-letter-spacing: -1.8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -1.8px;
 }
-.para-3{
+
+.para-3 {
     color: #faf6f6;
-    font-family: Circular Std;
+    font-family: 'Poppins', sans-serif;
     font-size: 17px;
 }
-.para-4{
+
+.para-4 {
     color: #eeecec;
     font-size: 12px;
 }
-.cont{
-    opacity: 1;
-    background-color:#232A29;
-/* background-image: linear-gradient(180deg, #64867e 0%, #000 50.7%) !important */
+.time{
+    margin-left: 25px !important;
 }
+
+.cont {
+    opacity: 1;
+    background-color:#000000;
+    height: 100px;
+    /* background-image: linear-gradient(180deg, #64867e 0%, #000 50.7%) !important */
+}
+.content-2>svg{
+    /*  */
+    transition: all .2s ease-in-out;
+}
+.content-2:hover{
+    cursor: pointer;
+    /* transform: scale(1.1); */
+}
+
+.song-list-1 {
+    color: rgb(202, 194, 194);
+    font-size: 10PX;
+}
+
+.song-list {
+
+    color: #eee8e8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    /* background-color:#1f1d1d; */
+}
+
+.song-list:hover {
+    background-color: rgb(41, 39, 39);
+    cursor: pointer;
+}
+
+.song-p1 {
+    padding: 10px !important;
+}
+
+.h-line {
+
+    position: RELATIVE;
+    color: rgb(255, 255, 255);
+    margin: 0%;
+    TOP: 19PX;
+}
+
+.scroll {
+    overflow-y: visible;
+}
+
+.left-section {
+    display: flex;
+
+}
+
+.left {
+
+    Width: 400.8px;
+    Height: 1000px;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    overflow-y: hidden;
+
+}
+
+.left-section::-webkit-scrollbar {
+    display: none;
+}
+
+.para {
+    color: #f5eded;
+    font-style: normal;
+    line-height: normal;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    font-size: 15px;
+}
+.para:hover,.item2>p:hover {
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.sec-2>svg {
+    background-color: #ffffff;
+}
+
+.item2>p {
+    color: #f5eded;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.item1 {
+    width: 80%;
+    background-color: #121212;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.item2 {
+    width: 80%;
+    background-color: #121212;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.left::-webkit-scrollbar {
+    display: scroll;
+}
+
+.bottom {
+
+    position: sticky;
+    bottom: 0px;
+    z-index: 5;
+}
+
+.bot>img {
+    width: 98.50vw;
+    height: 75px;
+}
+
+.media-logo,.media-time{
+    position: absolute;
+    margin-top: 10px;
+}
+.media-logo>svg:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    color: whitesmoke; 
+}
+.media-time:hover{
+    cursor: pointer;
+
+}
+.media-time{
+    position: absolute;
+    margin-top: 45px;
+}
+
 
 
 
