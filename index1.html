@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- <nav class="navbar-spoti  navbar-expand-lg bg-body-tertiary justify-content-between">
+        <div class="container-fluid ">
+           
+            <a class=" navbar123 BlinkitLogo__LogoContainer-sc-xocpjl-0 jzxMvs" href="/"><svg width="134" height="30"
+                    viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+                        fill="#F8CB46"></path>
+                    <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
+                    <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
+                    <path
+                        d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+                        fill="#F8CB46"></path>
+                    <path
+                        d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+                        fill="#F8CB46"></path>
+                    <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
+                    <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
+                    <path
+                        d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+                        fill="#54B226"></path>
+                    <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
+                </svg></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class=" navbar123 collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+                <div class="location">
+                    <h5>Delivery in 17 minutes</h5>
+                    <p>Mumbai, Maharashtra, India <i class="fa-solid fa-sort-down"></i></p>
+                </div>
+                <div class="searchd navbar123 ">
+                    <i class="fa-solid fa-magnifying-glass mg-glass"></i>
+                    <input type="text" placeholder="search eg. Oil">
+                </div>
+                <button class=" navbar123 btn btn-light">Login</button>
+                <button class=" navbar123 btn btn-success cartbtn"> <i class="fa-solid fa-cart-shopping"></i> 1 item
+                </button>
+
+            </div>
+        </div>
+    </nav> -->
+
+
+
+
+
+
+
+    <!-- section -1 -->
+    <section class="left-section d-flex flex-row ">
+        <div class="left ">
+            <div class="logo1 mx-3 m-4 ">
+                <img src="./ImagesAll/Spotify logo.png" alt="">
+            </div>
+
+            <div class="item1 mx-4">
+                <div class="d-flex  Home align-items-center m-2 mt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="34" viewBox="0 0 31 34" fill="none">
+                        <g clip-path="url(#clip0_306_615)">
+                            <path
+                                d="M15.5849 19.6659C14.6021 19.6659 13.6596 20.0888 12.9646 20.8417C12.2697 21.5946 11.8793 22.6157 11.8793 23.6804V33.0822H19.2906V23.6804C19.2906 22.6157 18.9002 21.5946 18.2052 20.8417C17.5103 20.0888 16.5677 19.6659 15.5849 19.6659Z"
+                                fill="white" />
+                            <path
+                                d="M17.2376 2.04697C16.784 1.60463 16.1953 1.35986 15.5849 1.35986C14.9746 1.35986 14.3858 1.60463 13.9322 2.04697L0.762268 14.8879V28.8047C0.762268 29.9404 1.17871 31.0296 1.91999 31.8326C2.66126 32.6357 3.66665 33.0868 4.71497 33.0868H9.40881V23.6809C9.40881 21.9064 10.0595 20.2046 11.2177 18.9498C12.376 17.6951 13.9469 16.9902 15.5849 16.9902C17.2229 16.9902 18.7938 17.6951 19.9521 18.9498C21.1103 20.2046 21.761 21.9064 21.761 23.6809V33.0828H26.4548C27.5032 33.0828 28.5086 32.6317 29.2498 31.8286C29.9911 31.0256 30.4076 29.9364 30.4076 28.8007V14.8839L17.2376 2.04697Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_306_615">
+                                <rect width="29.6453" height="32.1157" fill="white"
+                                    transform="translate(0.762268 0.932129)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="mx-4 para">Home</span>
+                </div>
+
+                <div class="d-flex  Home align-items-center m-2 mt-4 ">
+                    <img src="./ImagesAll/fi-rs-search.png" alt="">
+
+                    <span class="mx-4 para">Search</span>
+                </div>
+                <div class="d-flex  Home align-items-center m-2 mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                        <rect x="0.997498" y="0.15979" width="1.23522" height="28.4101" fill="white" />
+                        <rect x="9.64404" y="0.15979" width="1.23522" height="28.4101" fill="white" />
+                        <rect x="15.8201" y="0.655029" width="1.23522" height="29.3017"
+                            transform="rotate(-23.634 15.8201 0.655029)" fill="white" />
+                    </svg>
+                    <span class="mx-4 para">Your Library</span>
+                </div>
+            </div>
+
+            <!-- section -2 -->
+
+            <div class="item1 mt-5 mx-4">
+                <div class="d-flex sec-2 Home align-items-center m-2 mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                        <path
+                            d="M16.8201 14.0944V7.91833H14.3497V14.0944H8.17358V16.5649H14.3497V22.741H16.8201V16.5649H22.9962V14.0944H16.8201Z"
+                            fill="black" />
+                    </svg>
+                    <span class="mx-4 para">Create Playlist</span>
+                </div>
+
+                <div class="d-flex  Home align-items-center m-2 mt-4 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <g clip-path="url(#clip0_306_628)">
+                            <path
+                                d="M8.23299 1.31335C7.72879 1.3212 7.23557 1.46195 6.80317 1.72139C6.37076 1.98084 6.01447 2.34979 5.77027 2.79099C5.52608 2.34979 5.16979 1.98084 4.73738 1.72139C4.30497 1.46195 3.81176 1.3212 3.30755 1.31335C2.50378 1.34828 1.7465 1.69989 1.20116 2.29138C0.655812 2.88287 0.366729 3.66616 0.397065 4.47011C0.397065 7.50374 5.3028 11.0075 5.51146 11.1562L5.77027 11.3393L6.02908 11.1562C6.23774 11.0084 11.1435 7.50374 11.1435 4.47011C11.1738 3.66616 10.8847 2.88287 10.3394 2.29138C9.79404 1.69989 9.03676 1.34828 8.23299 1.31335Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_306_628">
+                                <path
+                                    d="M0.396973 1.90271C0.396973 1.35042 0.844688 0.90271 1.39697 0.90271H10.1434C10.6957 0.90271 11.1434 1.35043 11.1434 1.90271V10.6491C11.1434 11.2014 10.6957 11.6491 10.1434 11.6491H1.39697C0.844687 11.6491 0.396973 11.2014 0.396973 10.6491V1.90271Z"
+                                    fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <span class="mx-4 para">Liked Songs</span>
+                </div>
+
+                <div class="d-flex  Home align-items-center m-2 mt-4">
+                    <img src="./ImagesAll/episode.png" alt="">
+                    <span class="mx-4 para">Your Episodes</span>
+                </div>
+            </div>
+            <!-- section -3-->
+
+            <div class="item2 mx-4 mt-5">
+                <p>FAV</p>
+                <p>Daily Mix</p>
+                <p>Discovery Weekly</p>
+                <p>Malayalam</p>
+                <p>Dance / Electronix Mix</p>
+                <p>EDM / Popular</p>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="right">
+            <!-- <nav class="stickbar">
+                <div class=" navi d-flex justify-content-between align-items-center">
+                    <div class="arrow mx-2">
+                        <div class="la">
+                            <img src="././ImagesAll/top arrow navigation.png" alt="">
+                        </div>
+                    </div>
+                    <div class="user mx-2 p-1 rounded-pill bg-dark d-flex justify-content-between align-items-center">
+                        <img src="./ImagesAll/profile.png" class="mx-1" alt="">
+                        <span class="p-0 mx-1 text-white">Angel</span>
+                        <img src="./ImagesAll/downArrow.png" class="mx-1" alt="">
+
+
+                    </div>
+
+                </div>
+            </nav> -->
+            <!-- <nav class="navbar-spoti stickbar  navbar-expand-lg bg-body-tertiary justify-content-between">
+                <div class="container-fluid ">
+                    
+                    <a class=" navbar123 BlinkitLogo__LogoContainer-sc-xocpjl-0 jzxMvs" href="/"><svg width="134" height="30"
+                            viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+                                fill="#F8CB46"></path>
+                            <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
+                            <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
+                            <path
+                                d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+                                fill="#F8CB46"></path>
+                            <path
+                                d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+                                fill="#F8CB46"></path>
+                            <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
+                            <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
+                            <path
+                                d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+                                fill="#54B226"></path>
+                            <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
+                        </svg></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+        
+                    <div class=" navbar123 collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+                        <div class="location">
+                            <h5>Delivery in 17 minutes</h5>
+                            <p>Mumbai, Maharashtra, India <i class="fa-solid fa-sort-down"></i></p>
+                        </div>
+                        <div class="searchd navbar123 ">
+                            <i class="fa-solid fa-magnifying-glass mg-glass"></i>
+                            <input type="text" placeholder="search eg. Oil">
+                        </div>
+                        <button class=" navbar123 btn btn-light">Login</button>
+                        <button class=" navbar123 btn btn-success cartbtn"> <i class="fa-solid fa-cart-shopping"></i> 1 item
+                        </button>
+        
+                    </div>
+                </div>
+            </nav> -->
+
+
+
+
+
+            <!-- section -good morning -->
+            <!-- <h3 class="p-2">Good Morning</h3> -->
+            <!-- <h3 class=" heading mt-4 mx-5">Good Morning</h3> -->
+            <div class="good-morning ">
+
+                <div class="content d-flex ">
+                    <div class="pic ">
+                        <img src="./spoty-lady.png" alt="">
+                    </div>
+                    <div class="sentences ">
+                        <p class="para-1 m-0 a">Playlist</p>
+                        <p class="para-2 m-0 a">Pop Right Now</p>
+                        <p class="para-3 m-0 a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus</p>
+                        <p class="para-4 m-0 a">Spotify. 860,305 likes. 100 songs, 5 hr 5 min</p>
+                    </div>
+
+                </div>
+
+                <div class="cont">
+                    <div class="content-2">
+                        <img src="./thumb_play.png" alt="">
+                        <img src="./heart.png" alt="">
+                        <img src="./more_big.png" alt="">
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div class="gdmrng1  flex-wrap  d-flex justify-content-evenly  align-items-center">
+                    <div class="gdm d-flex like-song ">
+                        <div class="love d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                fill="none">
+                                <g clip-path="url(#clip0_306_568)">
+                                    <path
+                                        d="M21.1461 1.10828C19.7854 1.12944 18.4545 1.50927 17.2876 2.2094C16.1207 2.90953 15.1592 3.90517 14.5002 5.09578C13.8413 3.90517 12.8798 2.90953 11.7129 2.2094C10.546 1.50927 9.21504 1.12944 7.8544 1.10828C5.68537 1.20252 3.6418 2.15137 2.17014 3.74756C0.698481 5.34374 -0.0816308 7.45749 0.000234432 9.62703C0.000234432 17.8135 13.2387 27.2687 13.8018 27.6699L14.5002 28.1641L15.1987 27.6699C15.7617 27.2711 29.0002 17.8135 29.0002 9.62703C29.0821 7.45749 28.302 5.34374 26.8303 3.74756C25.3587 2.15137 23.3151 1.20252 21.1461 1.10828Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_306_568">
+                                        <rect width="29" height="29" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="liked-song"> Liked Song</p>
+                    </div>
+
+                    <div class="gdm d-flex like-song ">
+                        <div class="spider d-flex">
+                            <img src="./ImagesAll/spider.png" alt="">
+                        </div>
+                        <p class="liked-song"> Netflix PlayList</p>
+                    </div>
+
+                    <div class="gdm d-flex like-song ">
+                        <div class="spider d-flex">
+                            <img src="./ImagesAll/k-da.png" alt="">
+                        </div>
+                        <p class="liked-song">K/ DA</p>
+                    </div>
+
+                    <div class="gdm d-flex like-song ">
+                        <div class="spider d-flex">
+                            <img src="./ImagesAll/dabbahead.png" alt="">
+                        </div>
+                        <p class="liked-song"> Dance / Electronic Mix</p>
+                    </div>
+
+                    <div class="gdm d-flex like-song ">
+                        <div class="love d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                fill="none">
+                                <g clip-path="url(#clip0_306_568)">
+                                    <path
+                                        d="M21.1461 1.10828C19.7854 1.12944 18.4545 1.50927 17.2876 2.2094C16.1207 2.90953 15.1592 3.90517 14.5002 5.09578C13.8413 3.90517 12.8798 2.90953 11.7129 2.2094C10.546 1.50927 9.21504 1.12944 7.8544 1.10828C5.68537 1.20252 3.6418 2.15137 2.17014 3.74756C0.698481 5.34374 -0.0816308 7.45749 0.000234432 9.62703C0.000234432 17.8135 13.2387 27.2687 13.8018 27.6699L14.5002 28.1641L15.1987 27.6699C15.7617 27.2711 29.0002 17.8135 29.0002 9.62703C29.0821 7.45749 28.302 5.34374 26.8303 3.74756C25.3587 2.15137 23.3151 1.20252 21.1461 1.10828Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_306_568">
+                                        <rect width="29" height="29" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="liked-song"> Popular Song</p>
+                    </div>
+
+                    <div class="gdm d-flex like-song ">
+                        <div class="spider d-flex">
+                            <img src="./ImagesAll/spider.png" alt="">
+                        </div>
+                        <p class="liked-song"> Spotify PlayList</p>
+                    </div>
+
+
+
+                </div> -->
+
+            </div>
+
+            <!-- section -show you might like -->
+
+            <h3 class=" heading mt-4 mx-5">Shows you might like</h3>
+            <div class="song-list">
+                <div class="song">
+                <div class="song-p1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
+                        <path d="M9.60205 7.04145L0.19764 13.1395L0.19764 0.943375L9.60205 7.04145Z" fill="white"/>
+                        </svg>
+                </div>
+                <div class="song-p2">
+                    <img src="./songpic.png" alt="">
+                </div>
+                <div class="song-p3"> 
+                    <p>Future Nostalgia (The Moonlight Edition)</p>
+                </div>
+                <div class="song-p4"> 19/08/2019</div>
+                </div>
+            </div>
+
+
+            <!-- <footer></footer> -->
+
+            <div class="footer">
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <section class="bottom d-flex flex-column align-items-center">
+        <div class="bot">
+            <img src="./ImagesAll/Down options except music player.png" alt="">
+        </div>
+        <div class="media-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path
+                    d="M12.8952 14.0134L13.6526 13.1478C12.4624 11.7413 10.7312 10.9839 9 10.9839V12.0658C10.4066 12.0658 11.8132 12.715 12.787 13.797L12.8952 14.0134ZM21.0102 19.0988C19.7118 19.0988 18.5216 18.5578 17.5478 17.6922L16.8986 18.5578C17.9806 19.6398 19.4954 20.1808 21.0102 20.1808V21.8038L24.7972 19.6398L21.0102 17.4758V19.0988ZM21.0102 12.6068V14.2298L24.7972 12.0658L21.0102 9.90186V11.5249C19.279 11.5249 17.5478 12.2822 16.4658 13.6888L12.787 17.9086C11.8132 18.9906 10.4066 19.6398 9 19.6398V20.7218C10.7312 20.7218 12.4624 19.9644 13.5444 18.5578L17.2232 14.338C18.197 13.256 19.6036 12.6068 21.0102 12.6068Z"
+                    fill="white" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M21.82 10L13.164 14.9977V10.541H11V21.361H13.164V16.9042L21.82 21.902V10Z" fill="white" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                <path
+                    d="M0 17C0 7.61116 7.61116 0 17 0C26.3888 0 34 7.61116 34 17C34 26.3888 26.3888 34 17 34C7.61116 34 0 26.3888 0 17Z"
+                    fill="white" />
+                <path d="M12.7695 23.3748L23.811 16.9998L12.7695 10.6248V23.3748Z" fill="black" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M19.656 10.5365V14.9565L11 10V21.8036L19.656 16.8472V21.2671H21.82V10.5365H19.656Z"
+                    fill="white" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path
+                    d="M12.869 12.705H17.738V14.328L21.525 12.164L17.738 10V11.623H12.869C10.164 11.623 8 13.787 8 16.492C8 17.1412 8.1082 17.7904 8.4328 18.4396L9.4066 17.8986C9.1902 17.4658 9.082 17.033 9.082 16.492C9.082 14.4362 10.8132 12.705 12.869 12.705ZM22.7152 14.5444L21.7414 15.0854C21.9578 15.5182 22.066 15.951 22.066 16.492C22.066 18.5478 20.3348 20.279 18.279 20.279H13.41V18.656L9.623 20.82L13.41 22.984V21.361H18.279C20.984 21.361 23.148 19.197 23.148 16.492C23.148 15.8428 23.0398 15.1936 22.7152 14.5444Z"
+                    fill="white" />
+            </svg>
+        </div>
+        <div class="media-time">
+            <img src="./ImagesAll/0_00.png" alt="">
+            <img src="./ImagesAll/runniing bar.png" alt="">
+            <img src="./ImagesAll/2_50.png" alt="">
+
+        </div>
+    </section>
+
+
+
+    <!-- script  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
